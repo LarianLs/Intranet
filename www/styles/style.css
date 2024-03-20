@@ -1,0 +1,173 @@
+body{
+    background-color: gray;
+}
+
+.title-page{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+/* mobile */
+
+.search-bar-mobile{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 70%;
+    background-color: lightgray;
+}
+
+#button-search-bar-mobile{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: auto;
+    background-color: lightgray;
+}
+
+#button-search-bar-mobile:hover{
+    transition: 0,7s;
+    background-color: gray;
+    color: white;
+    border-color: black;
+}
+
+/* tablet */
+
+.search-bar-tablet{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 50%;
+    background-color: lightgray;
+}
+
+#button-search-bar-tablet{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: auto;
+    background-color: lightgray;
+}
+
+#button-search-bar-tablet:hover{
+    transition: 0,7s;
+    background-color: gray;
+    color: white;
+    border-color: black;
+}
+
+/* laptop */
+
+.search-bar-laptop{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 40%;
+    background-color: lightgray;
+}
+
+#button-search-bar-laptop{
+    padding: 4px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    width: auto;
+    background-color: lightgray;
+}
+
+#button-search-bar-laptop:hover{
+    transition: 0,7s;
+    background-color: gray;
+    color: white;
+    border-color: black;
+}
+
+.search-bar-mobile,
+.search-bar-tablet,
+.search-bar-laptop,
+.search-bar-laptopL,
+#button-search-bar-mobile,
+#button-search-bar-tablet,
+#button-search-bar-laptop,
+#button-search-bar-laptopL {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) { /* mobile */
+    .search-bar-mobile,
+    #button-search-bar-mobile {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) { /* tablet */
+    .search-bar-tablet,
+    #button-search-bar-tablet {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 901px) { /* laptop */
+    .search-bar-laptop,
+    #button-search-bar-laptop {
+        display: inline-block;
+    }
+}
+
+.welcome-txt{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.dropdown {
+    display: inline-block;
+    margin: auto;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttons{
+    text-align: center;
+    background-color: darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+}
